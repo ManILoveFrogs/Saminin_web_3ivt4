@@ -1,0 +1,122 @@
+body{
+    background-color: aqua;
+    margin: 0%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.pos_ab{position: absolute;}
+
+.sun{
+    top: 10%;
+    left: 7%;
+    width: 200px; 
+    height:200px;
+    background: rgb(247, 247, 0);
+    border-radius: 100px/100px;
+    transform: rotate(45deg);
+    z-index: 99;
+}
+
+.mount{
+    width: 800px; 
+    height:800px;
+    border-radius: 160px/160px;
+    transform: rotate(45deg);
+}
+.mount1{
+    top: 35%;
+    left: 50%;
+    background: rgb(78, 148, 48);
+}
+.mount2{
+    top: 20%;
+    left: 27%;
+    background: green;
+}
+.mount3{
+    top: 30%;
+    left: 7%;
+    background: rgb(31, 224, 31);
+}
+
+.ground{
+    top: 70%;
+    left: 0%;
+    width: 1920px; 
+    height: 500px;
+    background: #ffd;
+    border-radius: 260px/80px;
+}
+
+.telo{
+    top: 40%;
+    left: 10%;
+    width: 200px; 
+    height:170px;
+    background: rgb(199, 50, 12);
+    border-radius: 100px/100px;
+}
+.hand{
+    top: 67%;
+    width: 50px; 
+    height: 50px;
+    background: rgb(251, 255, 0);
+    border-radius: 100px/100px;
+}
+.hand1{left: 19%;}
+.hand2{left: 56%;}
+.head{
+    top: 26%;
+    left: 21%;
+    width: 140px; 
+    height: 120px;
+    background: #eae6ca;
+    border-radius: 100px/100px;
+}
+.glaz{
+    top: 30%;
+    width: 30px; 
+    height: 40px;
+    background: #ffffff;
+    border-radius: 30px/30px;
+}
+.glaz1{left: 24%; transform: rotate(30deg);}
+.glaz2{left: 55%; transform: rotate(-30deg);}
+.dot{
+    top: 30%;
+    width: 5px; 
+    height: 5px;
+    background: #000;
+    border-radius: 30px/30px;
+}
+.glaz1 .dot{left: 58%;}
+.glaz2 .dot{left: 40%;}
+.rot{
+    top: 73%;
+    left: 35%;
+    width: 50px; 
+    height: 5px;
+    background: #000;
+    border-radius: 30px/30px;
+}
+
+.dude{
+    position: absolute;
+    width: 260px;
+    height: 300px;
+    top: 40%;
+}
+
+.dude1{left: 23%;}
+.dude2{left: 35%;}
+.dude3{left: 47%;}
+.dude4{left: 59%;}
+
+
+.dude2 .telo{background-color: rgb(255, 166, 0);}
+.dude3 .telo{background-color: rgb(59, 50, 9);}
+.dude4 .telo{background-color: rgb(255, 100, 10);}
+
+.dude2 .hand{background-color: rgb(4, 146, 47);}
+.dude3 .hand{background-color: rgb(255, 0, 0);}
+.dude4 .hand{background-color: rgb(59, 50, 9);}

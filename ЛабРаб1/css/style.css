@@ -1,0 +1,312 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ 
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+ 
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+ 
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+ 
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+ 
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+ 
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+ 
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*Fonts start*/
+@font-face { 
+    font-family: "OswaldLight";
+    src: url("../fonts/OswaldLight/OswaldLight.eot");
+    src: url("../fonts/OswaldLight/OswaldLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OswaldLight/OswaldLight.woff") format("woff"),
+    url("../fonts/OswaldLight/OswaldLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+/*Fonts end*/
+
+
+*{
+    font-family: "OswaldLight";
+    font-style: normal;
+    color: #fff;
+}
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #000;
+}
+#main{
+    padding-top: 60px; 
+    min-height:90vh;
+}
+h1{text-align: center;font-size: 90px;}
+h3{text-align: center; font-size: 25px;}
+mark{color: #000;}
+address{
+    margin-right: 2%;
+    text-align: right;
+}
+abbr, a{text-decoration: none;}
+a:lang(ru){font-style: normal;}
+a:hover, a:focus{color: #FB1080;}
+.links a:visited, .links a:link{font-size: inherit;}
+a:active{background-color: #fff}
+a.purple:hover{
+    color: #aaa;
+    font-size: 35px;
+}
+.purple{color: #FB1080}
+p.purple {font-size: 21px;}
+tr, td {border: 1px solid white;}
+ins{color: #000;}
+
+/*Header and Footer start*/
+#header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+}
+.header_nav{
+    display: flex; 
+    justify-content: space-between; 
+    width: 30%;
+}
+#footer{
+    position: absolute;
+    bottom:0fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+.footer_nav{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+/*Header and Footer end*/
+
+
+/*Intro start*/
+.intro{
+    margin: 3% 0 3% 20%;
+    font-size: 25px;
+}
+.intro_title{
+    transform: translate(0px, -100%);
+    opacity: 0;
+    transition: all 2s ease 0s;
+}
+.intro_title._active{
+    transform: translate(0px, 0%);
+    opacity: 1;
+}
+.intro_subtitle{
+    transform: translate(0px, 100%);
+    opacity: 0;
+    transition: all 1.5s ease 0.5s;
+}
+.intro_subtitle._active{
+    transform: translate(0px, 0%);
+    opacity: 1;
+}
+.slide-single{width: 99%; height: 270px;}
+/*Intro end*/
+
+
+/*Links start*/
+.links{
+    text-align: center;
+    font-size: 30px;
+    margin: 2% 0;
+}
+form{width: 30%; margin: 0 auto;}
+form p, form legend{font-size: 32px;}
+p input{color: #000;}
+input{width: 100%;}
+input:not([type="submit"]) {border: 1px solid #fff;}
+input:required {border: 1px solid #fff;}
+fieldset+p{margin: 2% 0;}
+textarea:disabled { border: 1px solid #666; }
+.pita{margin-left: 5%; float: left;}
+.links_first{
+    transform: translate(-100%, 0px);
+    opacity: 0;
+    transition: all 0.6s ease 0s;
+}
+.links_first._active{
+    transform: translate(0px, 0%);
+    opacity: 1;
+}
+.links_second{
+    transform: translate(100%, 0px);
+    opacity: 0;
+    transition: all 0.6s ease 0.5s;
+}
+.links_second._active{
+    transform: translate(0px, 0%);
+    opacity: 1;
+}
+.links_third{
+    transform: translate(-100%, 0px);
+    opacity: 0;
+    transition: all 0.6s ease 1s;
+}
+.links_third._active{
+    transform: translate(0px, 0%);
+    opacity: 1;
+}
+.links_fourth{
+    transform: translate(100%, 0px);
+    opacity: 0;
+    transition: all 0.6s ease 1.5s;
+}
+.links_fourth._active{
+    transform: translate(0px, 0%);
+    opacity: 1;
+}
+/*Links end*/
+
+
+/*Culture start*/
+.culture_section{overflow-y: hidden;}
+.list_text{font-size: 18px;}
+.list_sub{font-size: 23px;}
+.culture_subsection{margin-top: 3%;}
+
+.culture_subsection p.purple:before {content: "\20aa ";}
+.float_left{float: left; margin-left: 14%;}
+.float_right{float: right; margin-right: 14%;}
+.culture_subsection1{
+    transform: translate(0%, -100%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+.culture_subsection1._active{
+    transform: translate(0%, 0%);
+    opacity: 1;
+}
+.culture_subsection2{
+    transform: translate(0%, 100%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+.culture_subsection2._active{
+    transform: translate(0%, 0%);
+    opacity: 1;
+}
+/*Culture end*/
+
+
+/*Infras start*/
+section.infras_section + article.bus_list{width: 60%; margin: 0 0 7% 15%;}
+.infras_container{
+    display: flex;
+    margin: 3% 0 5% 8%;
+}
+.infras_section .infras_info{
+    width: 45%;
+    transform: translate(-100%, 100%);
+    opacity: 0;
+    transition: all 0.5s ease 0.5s;
+}
+.infras_section .infras_info._active{
+    transform: translate(0%, 0%);
+    opacity: 1;
+}
+.infras_info{font-size: 22px;}
+.map{
+    position: static;
+    margin-right: 5%;
+    transform: translate(100%, 100%);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.map._active{
+    transform: translate(0%, 0%);
+    opacity: 1;
+}
+.admin_table{
+    margin: 0% auto;
+    border: 2px solid white;
+    border-collapse: collapse;
+    text-align: center;
+}
+.admin_table td:nth-of-type(2n+1){color: #000; background-color: #fff;}
+.admin_table td:nth-child(2n){font-size: 40px;}
+.infras_actual{text-align: center;}
+/*Infras end*/
+
+
+/*Story start*/
+.story_table{
+    margin: 5% auto; 
+    text-align: left;
+    font-size: 22px;
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+.story_table._active{opacity: 1;}
+.story_table td:first-of-type {text-align: center;}
+.story_table td:first-child{background-color: #fff; color: #000;}
+/*Story end*/
+
