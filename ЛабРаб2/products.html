@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Продукты</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap"
+            rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container pt-2">
+        <div class="row p-2">
+            <div class="col-3 logo-container">
+                <img src="https://m-polba.ru/wp-content/uploads/2021/05/group-130.png" alt="">
+            </div>
+
+            <div class="col-5 d-flex align-items-center">
+                <div class="input-group">
+                    <button type="button"
+                            class="btn btn-secondary btn-custom-gray dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <span>Искать</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                    <input type="text" class="form-control input-border-custom-gray"
+                           aria-label="Text input with segmented dropdown button">
+                    <button type="button" class="btn btn-outline-secondary btn-custom-gray-2"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+
+            <div class="col-2 offset-2 d-flex align-items-end flex-column justify-content-center">
+                <div class="row">
+                    <div class="col d-flex align-items-center">
+                        <a href="" class=" my-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown dropdown-custom-btn">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                Мой аккаунт
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg custom-main-nav">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse  " id="navbarText">
+                <ul class="navbar-nav d-flex align-items-center w-100 justify-content-center custom-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Основная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Продукты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recomend.html">Рекомендуем</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shoplist.html">Список покупок</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="connect.html">Связь</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="products">
+
+    <section class="section1 d-flex align-items-center mb-5">
+        <div class="container-xl">
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-3">
+                    <div class="title">
+                        <h1>Продукты</h1>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="title">
+                        <p> 
+                            <span>Продукты</span> / 
+                            <span>Свежее</span> /
+                            <span>По скидке</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section2"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3">
+                    <ul class="list-unstyled">
+                        <li>
+                            <div class="title">
+                                <button class="col-11 border-opacity-0 border-end-0 text-start btn btn-toggle align-items-center rounded-0 collapsed" data-bs-toggle="collapse" data-bs-target="#category-collapse-1" aria-expanded="false">
+                                    <span>Категории</span>
+                                </button>
+                            </div>
+
+                            <div class="ps-3 collapse" id="category-collapse-1">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal py-3 small">
+                                    <li>
+                                        <h6>Updates</h6>
+                                    </li>
+                                    <li>
+                                        <h6>
+                                            </h6><h6>Reports</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Overview</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Updates</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Reports</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Overview</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Updates</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Reports</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Overview</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Updates</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Reports</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Overview</h6>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="title my-2">
+                                <button class="col-11 border-end-0 text-start btn btn-toggle align-items-center rounded-0 collapsed" data-bs-toggle="collapse" data-bs-target="#category-collapse-2" aria-expanded="false">
+                                    <span>Скидки</span>
+                                </button>
+                            </div>
+
+                            <div class="ps-3 collapse" id="category-collapse-2">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal py-3 small">
+                                    <li>
+                                        <h6>Updates</h6>
+                                    </li>
+                                    <li>
+                                        <h6>
+                                            </h6><h6>Reports</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Overview</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Updates</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Reports</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Overview</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Updates</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Reports</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Overview</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Updates</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Reports</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Overview</h6>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="title my-2">
+                                <button class="col-11 border-end-0 text-start btn btn-toggle align-items-center rounded-0 collapsed" data-bs-toggle="collapse" data-bs-target="#category-collapse-3" aria-expanded="false">
+                                    <span>Оплата</span>
+                                </button>
+                            </div>
+
+                            <div class="ps-3 collapse" id="category-collapse-3">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal py-3 small">
+                                    <li>
+                                        <h6>Updates</h6>
+                                    </li>
+                                    <li>
+                                        <h6>
+                                            </h6><h6>Reports</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Overview</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Updates</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Reports</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Overview</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Updates</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Reports</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Overview</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Updates</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Reports</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Overview</h6>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-12 col-md-9 col-lg-9 col-xl-9">
+                    <div class="row justify-content-between pb-4">
+                        <div class="col-12 col-md-4 col-lg-3 col-xl-3">
+                            <h6><b>САМОЕ ПОКУПАЕМОЕ</b></h6>
+                            <div class="d-flex flex-row flex-wrap py-2">
+                                <h6>Яблоки</h6>
+                                <div class="vr mx-2 m-auto"></div>
+                                <h6>Мёдовик</h6>
+                                <div class="vr mx-2 m-auto"></div>
+                                <h6>Черешня</h6>
+                                <h6>Джем</h6>
+                                <div class="vr mx-2 m-auto"></div>
+                                <h6>Ананасы</h6>
+                                <div class="vr mx-2 m-auto"></div>
+                                <h6>Горох</h6>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-lg-3 col-xl-3">
+                            <h6><b>УПОКОВКА</b></h6>
+                            <div class="d-flex flex-row flex-wrap py-2">
+                                <div class="form-check mx-2">
+                                    <input aria-label="checkbox1" class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                                    <label aria-label="value1" class="form-check-label" for="flexCheckDefault">
+                                        Пластиковый пакет
+                                    </label>
+                                </div>
+                                <div class="form-check mx-2">
+                                    <input aria-label="checkbox2" class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                                    <label aria-label="value2" class="form-check-label" for="flexCheckDefault">
+                                        Бумажный пакет
+                                    </label>
+                                </div>
+                                <div class="form-check mx-2">
+                                    <input aria-label="checkbox3" class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                                    <label aria-label="value3" class="form-check-label" for="flexCheckDefault">
+                                        Целофановый пакет
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-lg-3 col-xl-3">
+                            <label for="customRange1" class="form-label pb-1"><b>ЦЕНА</b></label>
+                            <input type="range" class="form-range" id="customRange1">
+                            <div class="d-flex flex-row justify-content-between">
+                                <h6>10 рублей</h6>
+                                <h6>5000 рублей</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                
+                    <div class="bg-secondary row bg-opacity-10 py-3 px-3 mb-5 justify-content-center  justify-content-md-start justify-content-lg-start justify-content-xl-start">
+                        <div class="row col-12 col-md-6 col-lg-3 col-xl-3">
+                            <div class="col-6 col-md-5 col-lg-6 col-xl-5 p-0">
+                                <button id="button1" type="button" class="w-100 btn btn-light rounded-0 border-end">Primary</button>
+                            </div>
+
+                            <div class="form-group col-6 col-md-4 col-lg-6 col-xl-5 p-0">
+                                <select class="form-control bg-light rounded-0 border-0" id="exampleFormControlSelect1">
+                                    <option>Name</option>
+                                    <option>Cost</option>
+                                    <option>Brand</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row col-12 col-md-6 col-lg-4 col-xl-4">
+                            <div class="col-6 col-md-4 col-lg-4 col-xl-4 p-0">
+                                <button id="button2" type="button" class="w-100 btn btn-light rounded-0 border-end">Show</button>
+                            </div>
+
+                            <div class="form-group col-6 col-md-3 col-lg-3 col-xl-3 p-0">
+                                <select class="w-100 form-control bg-light rounded-0 border-0" id="exampleFormControlSelect2">
+                                    <option>09</option>
+                                    <option>08</option>
+                                    <option>07</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row product-list mb-5">
+                        <div class="col-6 col-md-4 col-lg-4 col-xl-4">
+                            <div class="product-item">
+                                <div class="image">
+                                    <img src="https://st2.depositphotos.com/16122460/44357/i/950/depositphotos_443572704-stock-photo-food-pie-chart-white-background.jpg" alt="">
+                                    <div class="shadow align-items-center justify-content-center">
+                                        <div class="btn btn-outline-primary btn-outline-white"><i class="fa-solid fa-cart-plus"></i>Add to Cart</div>
+                                    </div>
+                                </div>
+                                <h4 class="pt-1 pb-1 fs-4 fw-bold text-uppercase">Продукт</h4>
+                                <p class="price pb-1 text-uppercase fw-bold ">50 рублей</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-4 col-xl-4">
+                            <div class="product-item">
+                                <div class="image">
+                                    <img src="https://st2.depositphotos.com/16122460/44357/i/950/depositphotos_443572704-stock-photo-food-pie-chart-white-background.jpg" alt="">
+                                    <div class="shadow align-items-center justify-content-center">
+                                        <div class="btn btn-outline-primary btn-outline-white"><i class="fa-solid fa-cart-plus"></i>Add to Cart</div>
+                                    </div>
+                                </div>
+                                <h4 class="pt-1 pb-1 fs-4 fw-bold text-uppercase">Продукт</h4>
+                                <p class="price pb-1 text-uppercase fw-bold ">50 рублей</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-4 col-xl-4">
+                            <div class="product-item">
+                                <div class="image">
+                                    <img src="https://st2.depositphotos.com/16122460/44357/i/950/depositphotos_443572704-stock-photo-food-pie-chart-white-background.jpg" alt="">
+                                    <div class="shadow align-items-center justify-content-center">
+                                        <div class="btn btn-outline-primary btn-outline-white"><i class="fa-solid fa-cart-plus"></i>Add to Cart</div>
+                                    </div>
+                                </div>
+                                <h4 class="pt-1 pb-1 fs-4 fw-bold text-uppercase">Продукт</h4>
+                                <p class="price pb-1 text-uppercase fw-bold ">50 рублей</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-4 col-xl-4">
+                            <div class="product-item">
+                                <div class="image">
+                                    <img src="https://st2.depositphotos.com/16122460/44357/i/950/depositphotos_443572704-stock-photo-food-pie-chart-white-background.jpg" alt="">
+                                    <div class="shadow align-items-center justify-content-center">
+                                        <div class="btn btn-outline-primary btn-outline-white"><i class="fa-solid fa-cart-plus"></i>Add to Cart</div>
+                                    </div>
+                                </div>
+                                <h4 class="pt-1 pb-1 fs-4 fw-bold text-uppercase">Продукт</h4>
+                                <p class="price pb-1 text-uppercase fw-bold ">50 рублей</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-4 col-xl-4">
+                            <div class="product-item">
+                                <div class="image">
+                                    <img src="https://st2.depositphotos.com/16122460/44357/i/950/depositphotos_443572704-stock-photo-food-pie-chart-white-background.jpg" alt="">
+                                    <div class="shadow align-items-center justify-content-center">
+                                        <div class="btn btn-outline-primary btn-outline-white"><i class="fa-solid fa-cart-plus"></i>Add to Cart</div>
+                                    </div>
+                                </div>
+                                <h4 class="pt-1 pb-1 fs-4 fw-bold text-uppercase">Продукт</h4>
+                                <p class="price pb-1 text-uppercase fw-bold ">50 рублей</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-4 col-xl-4">
+                            <div class="product-item">
+                                <div class="image">
+                                    <img src="https://st2.depositphotos.com/16122460/44357/i/950/depositphotos_443572704-stock-photo-food-pie-chart-white-background.jpg" alt="">
+                                    <div class="shadow align-items-center justify-content-center">
+                                        <div class="btn btn-outline-primary btn-outline-white"><i class="fa-solid fa-cart-plus"></i>Add to Cart</div>
+                                    </div>
+                                </div>
+                                <h4 class="pt-1 pb-1 fs-4 fw-bold text-uppercase">Продукт</h4>
+                                <p class="price pb-1 text-uppercase fw-bold ">50 рублей</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-4 col-xl-4">
+                            <div class="product-item">
+                                <div class="image">
+                                    <img src="https://st2.depositphotos.com/16122460/44357/i/950/depositphotos_443572704-stock-photo-food-pie-chart-white-background.jpg" alt="">
+                                    <div class="shadow align-items-center justify-content-center">
+                                        <div class="btn btn-outline-primary btn-outline-white"><i class="fa-solid fa-cart-plus"></i>Add to Cart</div>
+                                    </div>
+                                </div>
+                                <h4 class="pt-1 pb-1 fs-4 fw-bold text-uppercase">Продукт</h4>
+                                <p class="price pb-1 text-uppercase fw-bold ">50 рублей</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-4 col-xl-4">
+                            <div class="product-item">
+                                <div class="image">
+                                    <img src="https://st2.depositphotos.com/16122460/44357/i/950/depositphotos_443572704-stock-photo-food-pie-chart-white-background.jpg" alt="">
+                                    <div class="shadow align-items-center justify-content-center">
+                                        <div class="btn btn-outline-primary btn-outline-white"><i class="fa-solid fa-cart-plus"></i>Add to Cart</div>
+                                    </div>
+                                </div>
+                                <h4 class="pt-1 pb-1 fs-4 fw-bold text-uppercase">Продукт</h4>
+                                <p class="price pb-1 text-uppercase fw-bold ">50 рублей</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-4 col-xl-4">
+                            <div class="product-item">
+                                <div class="image">
+                                    <img src="https://st2.depositphotos.com/16122460/44357/i/950/depositphotos_443572704-stock-photo-food-pie-chart-white-background.jpg" alt="">
+                                    <div class="shadow align-items-center justify-content-center">
+                                        <div class="btn btn-outline-primary btn-outline-white"><i class="fa-solid fa-cart-plus"></i>Add to Cart</div>
+                                    </div>
+                                </div>
+                                <h4 class="pt-1 pb-1 fs-4 fw-bold text-uppercase">Продукт</h4>
+                                <p class="price pb-1 text-uppercase fw-bold ">50 рублей</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-4 col-xl-4">
+                            <div class="product-item">
+                                <div class="image">
+                                    <img src="https://st2.depositphotos.com/16122460/44357/i/950/depositphotos_443572704-stock-photo-food-pie-chart-white-background.jpg" alt="">
+                                    <div class="shadow align-items-center justify-content-center">
+                                        <div class="btn btn-outline-primary btn-outline-white"><i class="fa-solid fa-cart-plus"></i>Add to Cart</div>
+                                    </div>
+                                </div>
+                                <h4 class="pt-1 pb-1 fs-4 fw-bold text-uppercase">Продукт</h4>
+                                <p class="price pb-1 text-uppercase fw-bold ">50 рублей</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-4 col-xl-4">
+                            <div class="product-item">
+                                <div class="image">
+                                    <img src="https://st2.depositphotos.com/16122460/44357/i/950/depositphotos_443572704-stock-photo-food-pie-chart-white-background.jpg" alt="">
+                                    <div class="shadow align-items-center justify-content-center">
+                                        <div class="btn btn-outline-primary btn-outline-white"><i class="fa-solid fa-cart-plus"></i>Add to Cart</div>
+                                    </div>
+                                </div>
+                                <h4 class="pt-1 pb-1 fs-4 fw-bold text-uppercase">Продукт</h4>
+                                <p class="price pb-1 text-uppercase fw-bold ">50 рублей</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-4 col-xl-4">
+                            <div class="product-item">
+                                <div class="image">
+                                    <img src="https://st2.depositphotos.com/16122460/44357/i/950/depositphotos_443572704-stock-photo-food-pie-chart-white-background.jpg" alt="">
+                                    <div class="shadow align-items-center justify-content-center">
+                                        <div class="btn btn-outline-primary btn-outline-white"><i class="fa-solid fa-cart-plus"></i>Add to Cart</div>
+                                    </div>
+                                </div>
+                                <h4 class="pt-1 pb-1 fs-4 fw-bold text-uppercase">Продукт</h4>
+                                <p class="price pb-1 text-uppercase fw-bold ">50 рублей</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                            <ul class="list-group list-group-horizontal overflow-auto">
+                                <li class="list-group-item border-end-0 p-0"><button aria-label="previous" type="button" class="btn"><i class="fa-solid fa-chevron-left"></i></button></li>
+                                <li class="list-group-item border-0 border-top border-bottom p-0"><button type="button" class="btn">1</button></li>
+                                <li class="list-group-item border-0 border-top border-bottom p-0"><button type="button" class="btn">2</button></li>
+                                <li class="list-group-item border-0 border-top border-bottom p-0"><button type="button" class="btn">3</button></li>
+                                <li class="list-group-item border-0 border-top border-bottom p-0"><button type="button" class="btn">4</button></li>
+                                <li class="list-group-item border-0 border-top border-bottom p-0"><button type="button" class="btn">5</button></li>
+                                <li class="list-group-item border-0 border-top border-bottom p-0"><button type="button" class="btn">6</button></li>
+                                <li class="list-group-item border-0 border-top border-bottom p-0"><button type="button" class="btn">...</button></li>
+                                <li class="list-group-item border-0 border-top border-bottom p-0"><button type="button" class="btn">20</button></li>
+                                <li class="list-group-item border-start-0 p-0"><button aria-label="next" type="button" class="btn"><i class="fa-solid fa-chevron-right"></i></button></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mt-3 mt-md-0 mt-lg-0 mt-xl-0 col-12 col-md-4 col-lg-2 col-xl-2 d-flex justify-content-center justify-content-md-end justify-content-lg-end justify-content-xl-end">
+                            <button type="button" class="w-100 btn btn-light border-primary border-opacity-25">View
+                                all</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section3 my-5">
+        <div class="container">
+            <div class="row text-white justify-content-around p-3 p-md-5 p-lg-5 p-xl-5">
+                <div class="row align-content-center col-12 col-md-12 col-lg-4 col-xl-4">
+                    <div class="col-3 col-md-2 col-lg-3 col-xl-3">
+                        <i class="fa-solid fa-truck fa-3x"></i>
+                    </div>
+
+                    <div class="col-9 col-md-8 col-lg-9 col-xl-8">
+                        <h3><b>Free Delivery</b></h3>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generatio. Worldwide delivery on
+                            all.</p>
+                    </div>
+                </div>
+
+                <div class="row align-content-center col-12 col-md-12 col-lg-4 col-xl-4">
+                    <div class="col-3 col-md-2 col-lg-3 col-xl-3">
+                        <i class="fa-solid fa-tags fa-3x"></i>
+                    </div>
+
+                    <div class="col-9 col-md-8 col-lg-9 col-xl-8">
+                        <h3><b>Sales &amp; discounts</b></h3>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generatio. Worldwide delivery on
+                            all.</p>
+                    </div>
+                </div>
+
+                <div class="row align-content-center col-12 col-md-12 col-lg-4 col-xl-4">
+                    <div class="col-3 col-md-2 col-lg-3 col-xl-3">
+                        <i class="fa-solid fa-crown fa-3x"></i>
+                    </div>
+
+                    <div class="col-9 col-md-8 col-lg-9 col-xl-8">
+                        <h3><b>Quality assurance</b></h3>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generatio. Worldwide delivery on
+                            all.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="pt-10">
+    <div class="container main-footer">
+        <div class="row">
+            <div class="col-5">
+                <div class="logo">
+                    <img src="https://m-polba.ru/wp-content/uploads/2021/05/group-130.png" alt="">
+                </div>
+                <p class="pt-5">Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                    syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded
+                    array of processes and cross-unit partnerships.
+                </p>
+                <p class="pt-3 pb-5">
+                    Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                </p>
+            </div>
+            <div class="col-2 offset-1">
+                <h5 class="mb-5">Company</h5>
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Home</a>
+                    </li>  <li>
+                    <a href="">Home</a>
+                </li>
+
+                </ul>
+            </div>
+            <div class="col-2">
+                <h5 class="mb-5">Company</h5>
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Home</a>
+                    </li>  <li>
+                    <a href="">Home</a>
+                </li>
+
+                </ul>
+            </div>
+            <div class="col-2">
+                <h5 class="mb-5">Company</h5>
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Home</a>
+                    </li>  <li>
+                    <a href="">Home</a>
+                </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="sub-footer pb-2 pt-4">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-6">
+                    <p>© 2017  Brand  All Rights Reserved.</p>
+                </div>
+                <div class="col-6 d-flex justify-content-end">
+                    <ul class="social d-flex justify-content-around">
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
